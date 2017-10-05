@@ -15,5 +15,25 @@ thi idea is very simple, octoprint and MJPEG encoder use few files to configure 
 
 and in order to reach the second webcam as /webcam2/?action=stream you have to modify also 
 
-sudo update-rd.d webcamd2 defaults
+5) /etc/haproxy/haproxy.conf
 
+In order to simplify the process I have created the directory tree so that you have just to get a copy the file in the right place.
+
+after that you have done it  you have to run
+
+6) sudo update-rd.d webcamd2 defaults
+
+it might give you an error/alert, but it will have worked.
+
+then reboot
+
+7) sudo reboot
+
+at the reboot you will be able to access the 2 webcams just switching between
+
+/webcam/?action=stream
+/webcam2/?action=stream
+
+I am not able to create a plugin for octoprint to simplify the switch between webcams, but if someone does it, please let me know.
+
+ENJOY.
