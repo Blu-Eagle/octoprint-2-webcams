@@ -1,4 +1,4 @@
-# Configuration for /etc/init.d/webcamd
+# Configuration for /etc/init.d/webcamd2
 
 # Daemon
 DAEMON=/root/bin/webcamd2
